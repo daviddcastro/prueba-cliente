@@ -9,12 +9,33 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title : string = 'proyecto001';
   nombre = 'Pedro';
-  edad = 21;
+  edad = 16;
   fumador = false;
-  sueldo : number[] = [1200, 1500, 1700];
+  sueldos : number[] = [1200, 1500, 1700];
+  provincias = [
+    {id: 1, nombre: "Sevilla"},
+    {id: 2, nombre: "Almeria"},
+    {id: 3, nombre: "Huelva"},
+    {id: 4, nombre: "Cadiz"},
+    {id: 5, nombre: "Cordoba"},
+
+  ];
+  contador = 0;
 
   esFumador() {
     return this.fumador?"Es fumador":"No es fumador";
+  }
+
+  diHola() {
+    alert("Hola amego");
+  }
+
+  incrementar() {
+    this.contador++;
+  }
+
+  descrementar() {
+    this.contador--;
   }
 }
 

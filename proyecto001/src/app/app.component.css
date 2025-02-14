@@ -1,0 +1,155 @@
+/* Estilos generales */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los bloques */
+.block {
+  background-color: lightgrey;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.block p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.block p:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.block .minor p {
+  color: #d9534f;
+}
+
+.block .adult p {
+  color: #5bc0de;
+}
+
+.ng-template p {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+/* Efectos hover para los párrafos */
+.block p:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Estilo para el contenedor de la página */
+.page-container {
+  padding: 20px;
+}
+
+/* Estilos generales para la tabla */
+/* Estilos generales para la tabla */
+.my-table {
+  width: 60%;
+  margin: 50px auto;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Para que el borde redondeado sea más limpio */
+}
+
+/* Estilo para las celdas (td) */
+.my-table td {
+  padding: 25px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: #333;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre una celda */
+.my-table td:hover {
+  background-color: #e7f7e5;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 128, 0, 0.2);
+}
+
+/* Estilo para la primera fila (tr) */
+.my-table tr:first-child td {
+  background-color: #4caf50; /* Verde fuerte */
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+}
+
+/* Estilo para la segunda fila (tr) */
+.my-table tr:last-child td {
+  background-color: #f9f9f9; /* Fondo suave */
+  color: #555; /* Color del texto más suave */
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Bordes suaves en la tabla */
+.my-table {
+  border: 3px solid #4caf50;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* Estilos generales para el botón */
+.my-button {
+  padding: 12px 25px;
+  font-size: 18px;
+  color: white;
+  background-color: #4caf50; /* Verde brillante */
+  border: none;
+  border-radius: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+/* Efecto al pasar el mouse */
+.my-button:hover {
+  background-color: #45a049; /* Color más oscuro al pasar el mouse */
+  transform: translateY(-4px); /* Botón se levanta un poco */
+  box-shadow: 0 6px 20px rgba(0, 128, 0, 0.3); /* Sombra más grande */
+}
+
+/* Efecto cuando el botón es presionado */
+.my-button:active {
+  background-color: #3e8e41; /* Más oscuro aún cuando se presiona */
+  transform: translateY(2px); /* El botón se "deprime" ligeramente */
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1); /* Sombra más suave al presionar */
+}
+

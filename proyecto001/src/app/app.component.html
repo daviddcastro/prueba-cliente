@@ -1,6 +1,43 @@
-<div>
-  <p>Tu nombre es {{nombre}}</p>
-  <p>Tienes {{edad}} años</p>
-  <p>Cobras {{sueldo}} €</p>
-  <p>{{esFumador()}}</p>
+<div class="container page-container">
+  <div class="block">
+    <h3>Mecanismo de interpolacion</h3>
+    <p class="nombre">Tu nombre es {{ nombre }}</p>
+    <p class="edad">Tienes {{ edad }} años</p>
+    <p class="sueldo">Cobras {{ sueldos }} €</p>
+    <p class="fumador">{{ esFumador() }}</p>
+  </div>
+
+  <div class="block">
+    <h3>Directiva *ngIf</h3>
+    <p *ngIf="edad >= 18; else menor" class="adult">Eres mayor de edad</p>
+    <ng-template #menor><p class="minor">Eres menor de edad</p></ng-template>
+  </div>
+  <div class="block">
+    <h3>Directiva *ngFor</h3>
+    <ul>
+      <li *ngFor="let sueldo of sueldos">{{sueldo}}</li>
+    </ul>
+    <select name="" id="">
+      <option *ngFor="let prov of provincias" value="{{prov.id}}">{{prov.nombre}}</option>
+    </select>
+  </div>
+  <div class="block">
+    <table class="my-table">
+      <tr *ngFor="let prov of provincias">
+        <td>{{prov.id}}</td>
+        <td>{{prov.nombre}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="block">
+    	<h3>Captura de eventos</h3>
+      <button class="my-button" (click)="diHola()" type="button">Di Hola</button>
+      <br><br>
+      <h4>Contador</h4>
+      <p>{{contador}}</p>
+      <br>
+      <button class="my-button" type="button" (click)="incrementar()">+</button>
+      <button class="my-button" type="button" (click)="descrementar()">-</button>
+  </div>
 </div>
