@@ -13,6 +13,8 @@ export class AppComponent {
   valor2!:number;
   valor3!:number;
 
+  resultado = "";
+
   constructor() {
     this.lanzarDados();
   }
@@ -21,6 +23,15 @@ export class AppComponent {
     this.valor1 = this.generarAleatorio();
     this.valor2 = this.generarAleatorio();
     this.valor3 = this.generarAleatorio();
+    this.comprobarResultado();
+  }
+
+  comprobarResultado() {
+    if(this.valor1 == this.valor2 && this.valor1 == this.valor3) {
+      this.resultado = "Has ganado!";
+    } else {
+      this.resultado = " - ";
+    }
   }
 
   generarAleatorio() {
